@@ -4,8 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="stylesheet" href="sample1.css" />
-    <script src="test.js"></script>
+
     <title>sample-3</title>
   </head>
   <!-- style -->
@@ -16,8 +28,18 @@
   </style>
   <!-- style END-->
   <body class="w3-deep-orange">
+    <!-- <div class="w3-sidebar w3-light-grey w3-bar-block" style="width: 25%">
+      <h3 class="w3-bar-item">Menu</h3>
+      <a href="#" class="w3-bar-item w3-button">Link 1</a>
+      <a href="#" class="w3-bar-item w3-button">Link 2</a>
+      <a href="#" class="w3-bar-item w3-button">Link 3</a>
+    </div> -->
+
     <!-- nav bar -->
     <div class="w3-top w3-blue w3-bar w3-card w3-padding">
+      <div class="w3-left w3-text-black">
+        <a class="w3-bar-item w3-hover-text-orange" href=""><b>Sample</b> </a>
+      </div>
       <div class="w3-right w3-text-black">
         <a class="w3-bar-item w3-hover-text-orange" href="catering.html"
           ><b>Catering</b></a
@@ -423,19 +445,54 @@
     </div>
 
     <div class="w3-row">
-      <div class="w3-col w3-container m4 l3 w3-yellow">
+      <div class="w3-col w3-container l6 m6 w3-yellow">
         <p>
           This text will use 12 columns on a small screen, 4 on a medium screen
           (m4), and 3 on a large screen (l3).
         </p>
       </div>
 
-      <div class="w3-col w3-container s4 m8 l9">
+      <div class="w3-col w3-container l6 m6">
         <p>
           This text will use 4 columns on a small screen (s4), 8 on a medium
           screen (m8), and 9 on a large screen (l9).
         </p>
       </div>
     </div>
+    <!-- Alpine 
+    <br />
+    <div class="w3-padding-32" x-data="{ open: false }">
+      <button @click="open = ! open">Toggle</button>
+
+      <div x-show="open" @click.outside="open = false">Contents...</div>
+    </div>
+    <br />
+   
+    <div class="w3-container w3-padding-32">
+      <h2>Navigation Bar with Dropdown</h2>
+      <p>Click on the Dropdown link to open the dropdown menu.</p>
+
+      <div class="w3-bar w3-light-grey">
+        <a href="#" class="w3-bar-item w3-button">Home</a>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <div x-data="{ open: false }">
+          <div class="w3-dropdown-click">
+            <button class="w3-button" @click="open = ! open">
+              Dropdown <i class="fa fa-caret-down"></i>
+            </button>
+            <div
+              class="w3-dropdown-content w3-bar-block w3-card"
+              x-show="open"
+              @click.outside="open = false"
+            >
+              <a href="#" class="w3-bar-item w3-button">Link 1</a>
+              <a href="#" class="w3-bar-item w3-button">Link 2</a>
+              <a href="#" class="w3-bar-item w3-button">Link 3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      Alpine -->
   </body>
 </html>
